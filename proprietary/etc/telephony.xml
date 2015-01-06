@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles>
+	
+	<!-- Operator -->
+	<!-- No SIM or SIM Roaming default profile -->
+	<profile>
+	 <siminfo operator="SPR" country="US" mcc="310" mnc="00" gid="" spn="" imsi="" default="true"/>
+			<item name="VMS"></item>
+			<item name="RVMS"></item>
+			<item name="ECC_list">911,*911,#911</item>		
+			<item name="ShortCodeCall">0,00</item>
+	</profile>			
+
+</profiles>
