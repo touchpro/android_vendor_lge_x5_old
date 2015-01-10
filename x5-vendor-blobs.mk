@@ -93,9 +93,8 @@ vendor/lge/x5/proprietary/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/lge/x5/proprietary/firmware/venus.b04:system/etc/firmware/venus.b04 \
     vendor/lge/x5/proprietary/firmware/venus.mbn:system/etc/firmware/venus.mbn \
     vendor/lge/x5/proprietary/firmware/venus.mdt:system/etc/firmware/venus.mdt \
-    vendor/lge/x5/proprietary/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
-    vendor/lge/x5/proprietary/lib/libtinycompress.so:system/lib/libtinycompress.so \
-    vendor/lge/x5/proprietary/lib/hw/audio.primary.msm8226.so:system/lib/hw/audio.primary.msm8226.so \
+    vendor/lge/x5/proprietary/lib/libbinder.so:system/lib/libbinder.so \
+    vendor/lge/x5/proprietary/lib/libproxyhal.so:system/lib/libproxyhal.so \
     vendor/lge/x5/proprietary/lib/libvss_common_iface.so:system/lib/libvss_common_iface.so \
     vendor/lge/x5/proprietary/lib/libvss_common_idl.so:system/lib/libvss_common_idl.so \
     vendor/lge/x5/proprietary/lib/libvss_nv_iface.so:system/lib/libvss_nv_iface.so \
@@ -316,6 +315,7 @@ vendor/lge/x5/proprietary/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/lge/x5/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/lge/x5/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
     vendor/lge/x5/proprietary/vendor/lib/libredirect_plugin.so:system/vendor/lib/libredirect_plugin.so \
+    vendor/lge/x5/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/x5/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/lge/x5/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lge/x5/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
