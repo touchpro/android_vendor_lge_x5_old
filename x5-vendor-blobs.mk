@@ -22,6 +22,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/x5/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/x5/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/lge/x5/proprietary/bin/irrcServer:system/bin/irrcServer \
+    vendor/lge/x5/proprietary/bin/e2fsck:system/bin/e2fsck \
+    vendor/lge/x5/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/x5/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/lge/x5/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/lge/x5/proprietary/bin/mpdecision:system/bin/mpdecision \
@@ -42,7 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/x5/proprietary/etc/ACDB/workspaceFile.qwsp:system/etc/ACDB/workspaceFile.qwsp \
     vendor/lge/x5/proprietary/etc/app_audio_config.xml:system/etc/app_audio_config.xml \
     vendor/lge/x5/proprietary/etc/ftm_test_config:system/etc/ftm_test_config \
-    vendor/lge/x5/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/lge/x5/proprietary/etc/init.qcom.ftm_module.sh:system/etc/init.qcom.ftm_module.sh \
     vendor/lge/x5/proprietary/etc/init.qcom.ftm_module_out.sh:system/etc/init.qcom.ftm_module_out.sh \
     vendor/lge/x5/proprietary/etc/init.wlan-on-off.sh:system/etc/init.wlan-on-off.sh \
@@ -53,21 +54,29 @@ PRODUCT_COPY_FILES += \
     vendor/lge/x5/proprietary/etc/init.zetaw.fm.sh:system/etc/init.zetaw.fm.sh \
     vendor/lge/x5/proprietary/etc/init.zetaw.post_boot.sh:system/etc/init.zetaw.post_boot.sh \
     vendor/lge/x5/proprietary/etc/init.zetaw.sdio.sh:system/etc/init.zetaw.sdio.sh \
-    vendor/lge/x5/proprietary/etc/init.zetaw.ssr.wifi.sh:system/etc/init.zetaw.ssr.wifi.sh \
-    vendor/lge/x5/proprietary/etc/init.zetaw.wifi.sh:system/etc/init.zetaw.wifi.sh \
-    vendor/lge/x5/proprietary/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    vendor/lge/x5/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    vendor/lge/x5/proprietary/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     vendor/lge/x5/proprietary/etc/nexcodec.cfg:system/etc/nexcodec.cfg \
-    vendor/lge/x5/proprietary/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    vendor/lge/x5/proprietary/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
-    vendor/lge/x5/proprietary/etc/quipc.conf:system/etc/quipc.conf \
     vendor/lge/x5/proprietary/etc/rssi.xml:system/etc/rssi.xml \
-    vendor/lge/x5/proprietary/etc/sap.conf:system/etc/sap.conf \
-    vendor/lge/x5/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    vendor/lge/x5/proprietary/etc/sprint_sysprop_notavailable.conf:system/etc/sprint_sysprop_notavailable.conf \
+    vendor/lge/x5/proprietary/etc/nfc/config_IT.xml:system/etc/nfc/config_IT.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_SG.xml:system/etc/nfc/config_SG.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_CN.xml:system/etc/nfc/config_CN.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config.xml:system/etc/nfc/config.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_AU.xml:system/etc/nfc/config_AU.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_KR.xml:system/etc/nfc/config_KR.xml \
+    vendor/lge/x5/proprietary/etc/nfc/mcc_list.xml:system/etc/nfc/mcc_list.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_NZ.xml:system/etc/nfc/config_NZ.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_US.xml:system/etc/nfc/config_US.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_PL.xml:system/etc/nfc/config_PL.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_TLF.xml:system/etc/nfc/config_TLF.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_MX.xml:system/etc/nfc/config_MX.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_CA.xml:system/etc/nfc/config_CA.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_FR.xml:system/etc/nfc/config_FR.xml \
+    vendor/lge/x5/proprietary/etc/nfc/target_list.xml:system/etc/nfc/target_list.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_IL.xml:system/etc/nfc/config_IL.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_BR.xml:system/etc/nfc/config_BR.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_COM.xml:system/etc/nfc/config_COM.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_JP.xml:system/etc/nfc/config_JP.xml \
+    vendor/lge/x5/proprietary/etc/nfc/config_PT.xml:system/etc/nfc/config_PT.xml \
     vendor/lge/x5/proprietary/etc/telephony.xml:system/etc/telephony.xml \
-    vendor/lge/x5/proprietary/etc/vold.fstab:system/etc/vold.fstab \
     vendor/lge/x5/proprietary/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/lge/x5/proprietary/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
     vendor/lge/x5/proprietary/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
@@ -108,7 +117,7 @@ vendor/lge/x5/proprietary/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/lge/x5/proprietary/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
     vendor/lge/x5/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
     vendor/lge/x5/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
-    vendor/lge/x5/proprietary/lib/hw/audio_policy.msm8226.so:system/lib/audio_policy.msm8226.so \
+    vendor/lge/x5/proprietary/lib/hw/audio_policy.msm8226.so:system/lib/hw/audio_policy.msm8226.so \
     vendor/lge/x5/proprietary/lib/libchromatix_hi543_common.so:system/lib/libchromatix_hi543_common.so \
     vendor/lge/x5/proprietary/lib/libchromatix_hi543_default_video.so:system/lib/libchromatix_hi543_default_video.so \
     vendor/lge/x5/proprietary/lib/libchromatix_hi543_preview.so:system/lib/libchromatix_hi543_preview.so \
@@ -157,6 +166,145 @@ vendor/lge/x5/proprietary/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
     vendor/lge/x5/proprietary/lib/libirrcJni.so:system/lib/libirrcJni.so \
     vendor/lge/x5/proprietary/lib/liblgewg.so:system/lib/liblgewg.so \
     vendor/lge/x5/proprietary/lib/hw/sensors.msm8930.so:system/lib/hw/sensors.msm8930.so \
+    vendor/lge/x5/proprietary/lib/liblgehdcpek.so:system/lib/liblgehdcpek.so \
+    vendor/lge/x5/proprietary/lib/libqcomfm_jni.so:system/lib/libqcomfm_jni.so \
+    vendor/lge/x5/proprietary/lib/libebtable_nat.so:system/lib/libebtable_nat.so \
+    vendor/lge/x5/proprietary/lib/libqsap_sdk.so:system/lib/libsap_sdk.so \
+    vendor/lge/x5/proprietary/lib/liblgmabl.so:system/lib/liblgmabl.so \
+    vendor/lge/x5/proprietary/lib/libatd_corelib.so:system/lib/libatd_corelib.so \
+    vendor/lge/x5/proprietary/lib/libOmxAacEnc.so:system/lib/libOmxAacEnc.so \
+    vendor/lge/x5/proprietary/lib/libharfbuzz.so:system/lib/libharfbuzz.so \
+    vendor/lge/x5/proprietary/lib/libripple_with_log.so:system/lib/libripple_with_log.so \
+    vendor/lge/x5/proprietary/lib/libcrashreporter.so:system/lib/libcrashreporter.so \
+    vendor/lge/x5/proprietary/lib/libebt_nflog.so:system/lib/libebt_nflog.so \
+    vendor/lge/x5/proprietary/lib/libnfc13-nxp.so:system/lib/libnfc13-nxp.so \
+    vendor/lge/x5/proprietary/lib/libDM_Lib.so:system/lib/libDM_Lib.so \
+    vendor/lge/x5/proprietary/lib/libswapheap.so:system/lib/libswapheap.so \
+    vendor/lge/x5/proprietary/lib/libkeyutils.so:system/lib/libkeyutils.so \
+    vendor/lge/x5/proprietary/lib/liblgftmitem.so:system/lib/liblgftmitem.so \
+    vendor/lge/x5/proprietary/lib/liblgdrm_adapt.so:system/lib/liblgdrm_adapt.so \
+    vendor/lge/x5/proprietary/lib/libwifiext_jni.so:system/lib/libwifiext_jni.so \
+    vendor/lge/x5/proprietary/lib/libtfimage-19.so:system/lib/libtfimage-19.so \
+    vendor/lge/x5/proprietary/lib/liblgebnr.so:system/lib/liblgebnr.so \
+    vendor/lge/x5/proprietary/lib/libjgcastservice.so:system/lib/libjgcastservice.so \
+    vendor/lge/x5/proprietary/lib/libalmashot-clr.so:system/lib/libalmashot-clr.so \
+    vendor/lge/x5/proprietary/lib/libebt_stp.so:system/lib/libebt_stp.so \
+    vendor/lge/x5/proprietary/lib/libEASInterface.so:system/lib/libEASInterface.so \
+    vendor/lge/x5/proprietary/lib/libNLP_es.so:system/lib/libNLP_es.so \
+    vendor/lge/x5/proprietary/lib/liblgupnp.so:system/lib/liblgupnp.so \
+    vendor/lge/x5/proprietary/lib/libatd_common.so:system/lib/libatd_common.so \
+    vendor/lge/x5/proprietary/lib/liblgatcmd.so:system/lib/liblgatcmd.so \
+    vendor/lge/x5/proprietary/lib/libAndroidExport.so:system/lib/libAndroidExport.so \
+    vendor/lge/x5/proprietary/lib/libmts.so:system/lib/libmts.so \
+    vendor/lge/x5/proprietary/lib/libLGnfc_jni.so:system/lib/libLGnfc_jni.so \
+    vendor/lge/x5/proprietary/lib/libPaApi.so:system/lib/libPaApi.so \
+    vendor/lge/x5/proprietary/lib/libnsesolver.so:system/lib/libnsesolver.so \
+    vendor/lge/x5/proprietary/lib/liblgdrm.so:system/lib/liblgdrm.so \
+    vendor/lge/x5/proprietary/lib/libvss_ims_qcci.so:system/lib/libvss_ims_qcci.so \
+    vendor/lge/x5/proprietary/lib/libpocketsphinx.so:system/lib/libpocketsphinx.so \
+    vendor/lge/x5/proprietary/lib/libext2_quota.so:system/lib/libext2_quota.so \
+    vendor/lge/x5/proprietary/lib/libwcnftm.so:system/lib/libwcnftm.so \
+    vendor/lge/x5/proprietary/lib/libfssdk.so:system/lib/libfssdk.so \
+    vendor/lge/x5/proprietary/lib/libnfc_ndef-nxp.so:system/lib/libnfc_ndef-nxp.so \
+    vendor/lge/x5/proprietary/lib/libatd_modeminterface.so:system/lib/libatd_modeminterface.so \
+    vendor/lge/x5/proprietary/lib/libLGnfc_config.so:system/lib/libLGnfc_config.so \
+    vendor/lge/x5/proprietary/lib/libebt_mark.so:system/lib/libebt_mark.so \
+    vendor/lge/x5/proprietary/lib/libebt_redirect.so:system/lib/libebt_redirect.so \
+    vendor/lge/x5/proprietary/lib/libhancomgraphics-19.so:system/lib/libhancomgraphics-19.so \
+    vendor/lge/x5/proprietary/lib/libnfc13_ndef.so:system/lib/libnfc13_ndef.so \
+    vendor/lge/x5/proprietary/lib/libhook_jni.so:system/lib/libhook_jni.so \
+    vendor/lge/x5/proprietary/lib/libxg.so:system/lib/libxg.so \
+    vendor/lge/x5/proprietary/lib/libebt_arpreply.so:system/lib/libebt_arpreply.so \
+    vendor/lge/x5/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
+    vendor/lge/x5/proprietary/lib/libtfexternal.so:system/lib/libtfexternal.so \
+    vendor/lge/x5/proprietary/lib/libuicc.so:system/lib/libuicc.so \
+    vendor/lge/x5/proprietary/lib/libqs.so:system/lib/libqs.so \
+    vendor/lge/x5/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    vendor/lge/x5/proprietary/lib/libMcClient.so:system/lib/libMcClient.so \
+    vendor/lge/x5/proprietary/lib/libwebp_android.so:system/lib/libwebp_android.so \
+    vendor/lge/x5/proprietary/lib/libebt_802_3.so:system/lib/libebt_802_3.so \
+    vendor/lge/x5/proprietary/lib/libskia_tf.so:system/lib/libskia_tf.so \
+    vendor/lge/x5/proprietary/lib/libheschl_arm_android16.so:system/lib/libheschl_arm_android16.so \
+    vendor/lge/x5/proprietary/lib/libutils2.so:system/lib/libutils2.so \
+    vendor/lge/x5/proprietary/lib/librectifier-v7a.so:system/lib/librectifier-v7a.so \
+    vendor/lge/x5/proprietary/lib/libvirtual.so:system/lib/libvirtual.so \
+    vendor/lge/x5/proprietary/lib/libstm-log.so:system/lib/libstm-log.so \
+    vendor/lge/x5/proprietary/lib/libNLP_en.so:system/lib/libNLP_en.so \
+    vendor/lge/x5/proprietary/lib/libvss_gnss_qcci.so:system/lib/libvss_gnss_qcci.so \
+    vendor/lge/x5/proprietary/lib/libmirrorlink_jni.so:system/lib/libmirrorlink_jni.so \
+    vendor/lge/x5/proprietary/lib/librctransport.so:system/lib/librctransport.so \
+    vendor/lge/x5/proprietary/lib/libmtpexif.so:system/lib/libmtpexif.so \
+    vendor/lge/x5/proprietary/lib/libmTalkSF.so:system/lib/libmTalkSF.so \
+    vendor/lge/x5/proprietary/lib/libecryptfs.so:system/lib/libecryptfs.so \
+    vendor/lge/x5/proprietary/lib/libVDObjectTrackerAPI.so:system/lib/libVDObjectTrackerAPI.so \
+    vendor/lge/x5/proprietary/lib/libndk_jni.so:system/lib/libndk_jni.so \
+    vendor/lge/x5/proprietary/lib/libtfimage.so:system/lib/libtfimage.so \
+    vendor/lge/x5/proprietary/lib/libvss_dmi_qcci.so:system/lib/libvss_dmi_qcci.so \
+    vendor/lge/x5/proprietary/lib/libpluginoptimizer.so:system/lib/libpluginoptimizer.so \
+    vendor/lge/x5/proprietary/lib/libNLPencryption.so:system/lib/libNLPencryption.so \
+    vendor/lge/x5/proprietary/lib/libebt_ulog.so:system/lib/libebt_ulog.so \
+    vendor/lge/x5/proprietary/lib/libbrunch.so:system/lib/libbrunch.so \
+    vendor/lge/x5/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
+    vendor/lge/x5/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/lge/x5/proprietary/lib/libnexadaptation_layer.so:system/lib/libnexadaptation_layer.so \
+    vendor/lge/x5/proprietary/lib/libDxHdcp.so:system/lib/libDxHdcp.so \
+    vendor/lge/x5/proprietary/lib/libcorkscrew2.so:system/lib/libcorkscrew2.so \
+    vendor/lge/x5/proprietary/lib/libgcrypt.so:system/lib/libgcrypt.so \
+    vendor/lge/x5/proprietary/lib/libebt_limit.so:system/lib/libebt_limit.so \
+    vendor/lge/x5/proprietary/lib/libwifilgeext_jni.so:system/lib/libwifilgeext_jni.so \
+    vendor/lge/x5/proprietary/lib/libWbxmlParser.so:system/lib/libWbxmlParser.so \
+    vendor/lge/x5/proprietary/lib/liblgsecclk.so:system/lib/liblgsecclk.so \
+    vendor/lge/x5/proprietary/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so \
+    vendor/lge/x5/proprietary/lib/libebt_standard.so:system/lib/libebt_standard.so \
+    vendor/lge/x5/proprietary/lib/libemotionalled_jni.so:system/lib/libemotionalled_jni.so \
+    vendor/lge/x5/proprietary/lib/libebt_log.so:system/lib/libebt_log.so \
+    vendor/lge/x5/proprietary/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13enc.so \
+    vendor/lge/x5/proprietary/lib/libhancomofficeengine.so:system/lib/libhancomofficeengine.so \
+    vendor/lge/x5/proprietary/lib/libtracking.so:system/lib/libtracking.so \
+    vendor/lge/x5/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/lge/x5/proprietary/lib/libgabi++.so:system/lib/libgabi++.so \
+    vendor/lge/x5/proprietary/lib/libebtable_broute.so:system/lib/libebtable_broute.so \
+    vendor/lge/x5/proprietary/lib/libxml2.so:system/lib/libxml2.so \
+    vendor/lge/x5/proprietary/lib/liblgeaacmain.so:system/lib/liblgeaacmain.so \
+    vendor/lge/x5/proprietary/lib/libOmxEvrcEnc.so:system/lib/libOmxEvrcEnc.so \
+    vendor/lge/x5/proprietary/lib/libripple.so:system/lib/libripple.so \
+    vendor/lge/x5/proprietary/lib/libserial_port.so:system/lib/libserial_port.so \
+    vendor/lge/x5/proprietary/lib/libsoftap.so:system/lib/libsoftap.so \
+    vendor/lge/x5/proprietary/lib/libkwr_mvoice-jni_4.so:system/lib/libkwr_mvoice-jni_4.so \
+    vendor/lge/x5/proprietary/lib/libebt_nat.so:system/lib/libebt_nat.so \
+    vendor/lge/x5/proprietary/lib/libMocaZip.so:system/lib/libMocaZip.so \
+    vendor/lge/x5/proprietary/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
+    vendor/lge/x5/proprietary/lib/libebt_vlan.so:system/lib/libebt_vlan.so \
+    vendor/lge/x5/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+    vendor/lge/x5/proprietary/lib/liblgdrm_jni.so:system/lib/liblgdrm_jni.so \
+    vendor/lge/x5/proprietary/lib/libActivationUtils.so:system/lib/libActivationUtils.so \
+    vendor/lge/x5/proprietary/lib/libNLP_ko.so:system/lib/libNLP_ko.so \
+    vendor/lge/x5/proprietary/lib/libwvoemprov.so:system/lib/libwvoemprov.so \
+    vendor/lge/x5/proprietary/lib/libndk1.so:system/lib/libndk1.so \
+    vendor/lge/x5/proprietary/lib/libebt_pkttype.so:system/lib/libebt_pkttype.so \
+    vendor/lge/x5/proprietary/lib/libebt_arp.so:system/lib/libebt_arp.so \
+    vendor/lge/x5/proprietary/lib/libebt_ip6.so:system/lib/libebt_ip6.so \
+    vendor/lge/x5/proprietary/lib/libtfbidi.so:system/lib/libbtfbidi.so \
+    vendor/lge/x5/proprietary/lib/libspeex.so:system/lib/libspeex.so \
+    vendor/lge/x5/proprietary/lib/libebt_among.so:system/lib/libebt_among.so \
+    vendor/lge/x5/proprietary/lib/libjson.so:system/lib/libjson.so \
+    vendor/lge/x5/proprietary/lib/libgpg-error.so:system/lib/libgpg-error.so \
+    vendor/lge/x5/proprietary/lib/liblgalmond.so:system/lib/liblgalmond.so \
+    vendor/lge/x5/proprietary/lib/libTfoWrite.so:system/lib/libTfoWrite.so \
+    vendor/lge/x5/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
+    vendor/lge/x5/proprietary/lib/libmjson.so:system/lib/libmjson.so \
+    vendor/lge/x5/proprietary/lib/liblgetars.so:system/lib/liblgetars.so \
+    vendor/lge/x5/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
+    vendor/lge/x5/proprietary/lib/libwfcu.so:system/lib/libwfcu.so \
+    vendor/lge/x5/proprietary/lib/liblinearalloc.so:system/lib/liblinearalloc.so \
+    vendor/lge/x5/proprietary/lib/libnetjni.so:system/lib/libnetjni.so \
+    vendor/lge/x5/proprietary/lib/liballjoyn.so:system/lib/liballjoyn.so \
+    vendor/lge/x5/proprietary/lib/libebtable_filter.so:system/lib/libebtable_filter.so \
+    vendor/lge/x5/proprietary/lib/libebt_mark_m.so:system/lib/libebt_mark_m.so \
+    vendor/lge/x5/proprietary/lib/libwfconabswpas.so:system/lib/libwfconabswpas.so \
+    vendor/lge/x5/proprietary/lib/libsphinxbase.so:system/lib/libsphinxbase.so \
+    vendor/lge/x5/proprietary/lib/libnfc-nxp.so:system/lib/libnfc-nxp.so \
+    vendor/lge/x5/proprietary/lib/libebt_ip.so:system/lib/libebt_ip.so \
     vendor/lge/x5/proprietary/vendor/bin/enable_uninstall.sh:system/vendor/bin/enable_uninstall.sh \
     vendor/lge/x5/proprietary/vendor/bin/ntcode_listing.sh:system/vendor/bin/ntcode_listing.sh \
     vendor/lge/x5/proprietary/vendor/firmware/libpn544_fw.so:system/vendor/firmware/libpn544_fw.so \
