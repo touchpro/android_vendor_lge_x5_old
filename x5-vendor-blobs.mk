@@ -18,6 +18,9 @@ PRODUCT_COPY_FILES := \
 
 PRODUCT_COPY_FILES += \
     vendor/lge/x5/proprietary/app/TimeService.apk:system/app/TimeService.apk \
+    vendor/lge/x5/proprietary/app/GnssAirTest.apk:system/app/GnssAirTest.apk \
+    vendor/lge/x5/proprietary/app/GnssPosTest.apk:system/app/GnssPosTest.apk \
+    vendor/lge/x5/proprietary/app/GnssTest.apk:system/app/GnssTest.apk \
     vendor/lge/x5/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/x5/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/x5/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
